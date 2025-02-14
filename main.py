@@ -6,10 +6,10 @@ def main():
 
 def character_counter(book):
     char_count={}
-    characters=list(book)
-    lower_chars=book.lower()
-    for char in lower_chars:
-        char_count[char]=lower_chars.count(char)
+    character_list=list(book.lower())
+    character_set=set(character_list)
+    for character in character_set:
+        char_count[character]=character_list.count(character)
     return char_count
 
 def word_counter(book):
